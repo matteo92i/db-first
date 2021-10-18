@@ -1,21 +1,22 @@
 nome = Auto Usate
 
-id - intero- MEDIUMINT
-marche -stringa- VARCHAR(15)
-modello -stringa- VARCHAR (15)
-kilometraggio -numero decimale - FLOAT (6,3)
-colore -stringa- VARCHAR(15)
-nPropretari - intero- TINYINT
-prezzoMin -intero -TINYINT
-prezzoMax -intero -TINYINT
-motore -stringa- VARCHAR (8)
-autoUsate -boolean- TINYINT
-autoKM0 -boolean - TINYINT
-immatricolazione -data -YEAR
-potenza -intero -TINYINT
-cambio -intero -TINYINT
-cilindrata -intero -TINYINT
-omologazione -stringa- VARCHAR(5)
-posti -intero -TINYINT
-porte -intero -TINYINT
-garanzia -boolean - TINYINT
+id - intero- MEDIUMINT -AUTOINCREMENT (UNIQUE - NOT NULL)
+marche -stringa- VARCHAR(15) -NOTNULL -UNIQUE
+modello -stringa- VARCHAR (15) -NOTNULL -UNIQUE
+kilometraggio -numero decimale - FLOAT (6,3) -NOTNULL
+colore -stringa- VARCHAR(15) -NOTNULL
+nPropretari - intero- TINYINT -NULL
+prezzoMin -intero -TINYINT -NULL
+prezzoMax -intero -TINYINT -NULL
+prezzo -intero -TINYINT -NOTNULL
+motore -stringa- VARCHAR (8) -NOTNULL
+autoUsate -boolean- TINYINT -NOTNULL
+autoKM0 -boolean - TINYINT -NOTNULL
+immatricolazione -data -YEAR -NOTNULL
+potenza -intero -TINYINT -NULL
+cambio -intero -TINYINT -NOTNULL
+cilindrata -intero -TINYINT -NULL
+omologazione -stringa- VARCHAR(5) -NULL
+posti -intero -TINYINT -NOTNULL
+porte -intero -TINYINT -NOTNULL
+garanzia -boolean - TINYINT -NULL
